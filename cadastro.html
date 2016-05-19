@@ -1,0 +1,225 @@
+﻿<DOCTYPE! html>
+<html lang="pt-br">
+	<head>
+		<title>Jornal PrimeiraHora - Formulário de Cadastro.</title>
+		<meta charset="utf-8" />
+		<meta name="author" content="Bruno Luis da Silva">
+		<meta name="description" content="Formulário de Cadastro"/>
+		<meta name="keywords" content="Informações, nome, idade"/>
+		<link rel="stylesheet" href="../layout/css/style.css">
+		<script>
+
+			function validaFormulario(){
+
+			if(document.frmcadastro.txtnome.value==""){
+				alert("Preencha o campo Nome");
+				document.frmcadastro.txtnome.focus();
+			}else if(document.frmcadastro.txtsobrenome.value==""){
+				alert("Preencha o campo Sobrenome");
+				document.frmcadastro.txtsobrenome.focus();
+			}else if((document.frmcadastro.rdsexo[0].checked!=true)&&(document.frmcadastro.rdsexo[1].checked!=true)){
+				alert("Informe seu sexo.")
+				document.frmcadastro.rdsexo[0].focus();
+			}else if(document.frmcadastro.txtnasc.value==""){
+				alert("Preencha o campo Data de Nascimento");
+				document.frmcadastro.txtnasc.focus();
+			}else if(document.frmcadastro.txtddd.value==""){
+				alert("Preencha o campo DDD");
+				document.frmcadastro.txtddd.focus();
+			}else if(document.frmcadastro.txttel.value==""){
+				alert("Preencha o campo Telefone");
+				document.frmcadastro.txttel.focus();
+			}else if (document.frmcadastro.txtemail.value==""){
+				alert("Preencha o campo E-MAIL");
+				document.frmcadastro.txtemail.focus();
+			}else if(document.frmcadastro.selestado.value==""){
+				alert("Selecione o seu estado");
+				document.frmcadastro.selestado.focus();
+			}else if(document.frmcadastro.txtcidade.value==""){
+				alert("Preencha o campo cidade");
+				document.frmcadastro.txtcidade.focus();
+			}else if(document.frmcadastro.txtrua.value==""){
+				alert("Preencha o campo Rua");
+				document.frmcadastro.txtrua.focus();
+			}else if(document.frmcadastro.txtncasa.value==""){
+				alert("Preencha o campo Número da Casa");
+				document.frmcadastro.txtncasa.focus();
+			}else if(document.frmcadastro.txtcep.value==""){
+				alert("Preencha com o campo CEP");
+				document.frmcadastro.txtcep.focus();
+			}else if(document.frmcadastro.txaobervacao.value==""){
+				alert("Preencha o campo obervação");
+				document.frmcadastro.txaobervacao.focus();
+			}else if(document.frmcadastro.txtusuario.value==""){
+				alert("Preencha o campo usuário");
+				document.frmcadastro.txtusuario.focus();
+			}else if(document.frmcadastro.pwdsenha.value==""){
+				alert("Preencha o campo Senha")
+				document.frmcadastro.pwdsenha.focus();
+			}else if(document.frmcadastro.chktermos.checked!=true){
+				alert("Para enviar o formulário, aceite os termos.")
+				document.frmcadastro.chktermos.focus();
+			}
+			return false;
+		}
+
+		</script>
+	</head>
+	<body>
+		<header id="cabecalho">
+			<h1>Jornal PrimeiraHora</h1>
+			<h2>Preencha o formulário com suas informações.</h2>
+		</header>
+		<nav id="menu">
+			<ul>
+				<li><a href="../index.html">Página Inicial</a></li>
+				<li><a href="categoria.html">Agenda de Shows</a></li>
+				<li><a href="cadastro.html">Cadastre-se</a></li>
+			</ul>
+		</nav>
+		<div class="conteudo"><!-- ABRE DIVISÃO DE INFORMAÇÕES-->
+			<div>
+				<form name="frmcadastro" method="POST" action="#" class="form_cadastro" onsubmit="return validaFormulario();">
+					<table>
+						<tr> <!-- Cria linha-->
+						<td>Nome: </td> <!--td cria colunas-->
+						<td> <input type="text" name="txtnome" maxlength="40"  size="72" value=""> </td>
+					</tr>
+					<tr>
+						<td>Sobrenome: </td>
+						<td><input type="text" name="txtsobrenome" maxlength="40" size="72" value=""> </td>
+					</tr><!--Fecha linha-->
+					<tr>
+						<td>Sexo: </td>
+						<td><input type="radio" name="rdsexo" value="M"> Masculino <input type="radio" name="rdsexo" value="F"> Feminino </td>
+					</tr>
+					<tr>
+						<td>Data de Nascimento: </td>
+						<td> <input type="text" name="txtnasc" maxlength="10" size="10" value="" placeholder="dd/mm/aaaa"> </td>
+					</tr>
+					<tr>
+						<td>DDD: </td>
+						<td> <input type="text" name="txtddd" maxlength="10" size="72" value=""> </td>
+					</tr>
+					<tr>
+						<td> Telefone: </td>
+						<td> <input type="text" name="txttel" maxlength="10" size="72" value=""> </td>
+					</tr>
+					<tr>
+						<td>E-mail: </td>
+						<td> <input type="text" name="txtemail" maxlength="50" size="72" value=""> </td>
+					</tr>
+					<tr>
+						<td>Estado: </td>
+						<td>
+							<select name="selestado">
+								<option value="">Selecione o Estado</option>
+								<option value="ac">Acre</option>
+								<option value="al">Alagoas</option>
+								<option value="am">Amazonas</option>
+								<option value="ap">Amapá</option>
+								<option value="ba">Bahia</option>
+								<option value="ce">Ceará</option>
+								<option value="df">Distrito Federal</option>
+								<option value="es">Espírito Santo</option>
+								<option value="go">Goiás</option>
+								<option value="ma">Maranhão</option>
+								<option value="mt">Mato Grosso</option>
+								<option value="ms">Mato Grosso do Sul</option>
+								<option value="mg">Minas Gerais</option>
+								<option value="pa">Pará</option>
+								<option value="pb">Paraíba</option>
+								<option value="pr">Paraná</option>
+								<option value="pe">Pernambuco</option>
+								<option value="pi">Piauí</option>
+								<option value="rj">Rio de Janeiro</option>
+								<option value="rn">Rio Grande do Norte</option>
+								<option value="ro">Rondônia</option>
+								<option value="rs">Rio Grande do Sul</option>
+								<option value="rr">Roraima</option>
+								<option value="sc">Santa Catarina</option>
+								<option value="se">Sergipe</option>
+								<option value="sp">São Paulo</option>
+								<option value="to">Tocantins</option>
+							</select>
+						</td>
+					<tr>
+						<td>Cidade: </td>
+						<td> <input type="text" name="txtcidade" maxlength="30" size="72" value="" > </td>
+					</tr>
+					</tr>
+					<tr>
+						<td>Rua: </td>
+						<td> <input type="text" name="txtrua" maxlength="5" size="72" value=""> </td>
+					</tr>
+					<tr>
+						<td>Número da casa: </td>
+						<td> <input type ="text" name="txtncasa" maxlength="5" size="72" value=""> </td>
+					</tr>
+					<tr>
+						<td>Complemento: </td>
+						<td> <input type="text" name="txtcomplemento" maxlength="15" size="72" value=""> </td>
+					</tr>
+					<tr>
+						<td>CEP: </td>
+						<td><input type="text" name="txtcep" maxlength="15" size="72" value="">  </td>
+					</tr>
+					<tr>
+						<td>Deseja receber notícias por e-mail? </td>
+						<td>
+							<input type="radio" name="rdmail" value="Sim"> Sim
+							<input type="radio" name="rdmail" value="Não"> Não
+						</td>
+					</tr>
+					<tr>
+						<td>Categorias de notícia que você gosta: </td>
+						<td>
+							<input type="checkbox" name="chksignos"> Signos <br/>
+							<input type="checkbox" name="chkregiao"> Noticias Da Região <br/>
+							<input  type="checkbox" name="chkassassinatos"> Assassinatos <br/>
+							<input type="checkbox" name="chkfamosos"> Famosos <br/>
+							<input type="checkbox" name="chkbeleza"> Dicas de Beleza <br/>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="08">
+							<textarea name="txaobervacao" cols="109" rows="6" placeholder="Digite aqui sua observação sobre o site."></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="08">
+							<textarea name="txasugestao" cols="109" rows="6" placeholder="Sugestão de melhorias para o site."></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td>Usuário: </td>
+						<td> <input type="text" name="txtusuario" maxlength="10" size="72" value=""> </td>
+					</tr>
+					<tr>
+						<td>Senha: </td>
+						<td><input type="password" name="pwdsenha" maxlength="10" size="72" value=""> </td>
+					</tr>
+					<tr>
+						<td colspan="100">
+							<input type="checkbox" name="chktermos"> Aceito e concordo com os termos do site.
+						</td>
+					</tr>
+					<tr colspan="10" >
+						<td> <button type="submit">Enviar Dados </button> <button type="reset"> Limpar Campos </button> </td>
+					</tr>
+					</table>
+				</form>
+			</div>
+		</div>
+		<hr/>
+		<div class="menu_inferior">
+			<a href="../index.html" class="menu_inferior"> Página Inicial </a> <!--Local-->
+			<a href="#cabecalho" class="menu_inferior"> Voltar ao Topo </a> <!--Interno-->
+			<a href="categoria.html" class="menu_inferior"> Agenda de Shows </a> <!--Externo-->
+		</div>
+	<hr/>
+	<footer><!-- Rodapé -->
+		<p> All rights reserved © </p>
+	</footer>
+	</body>
+</html>

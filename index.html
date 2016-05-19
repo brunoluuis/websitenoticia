@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html  lang="pt-br">
+	<head>
+		<title>Jornal PrimeiraHora</title>
+		<meta charset="utf-8" /><!-- codificação-->
+		<meta name="author" content="Bruno Luis da Silva"><!-- define o autor-->
+		<meta name="description" content="Jornal PrimeiraHora" /><!--Descrição breve da pagina-->
+		<meta name="keywords" content="Noticia, Crueldade, Mortes, Signos" /><!--Palavras-chaves-->
+		<link rel="stylesheet" href="layout/css/style.css">
+	</head>
+	<body>
+		<header id="cabecalho"><!-- cabeçalho-->
+			<h1>Jornal PrimeiraHora</h1><!-- h 1,2,3,4,5,6 define o parágrafo e o tamanho dele-->
+			<h2>Aqui suas notícias chegam rapidinho!</h2>
+		</header>
+		<nav id="menu">
+			<ul>
+				<li><a href="index.html">Página Inicial</a></li>
+				<li><a href="paginas/categoria.html">Agenda de Shows</a></li>
+				<li><a href="paginas/cadastro.html">Cadastre-se</a></li>
+			</ul>
+		</nav>
+		<div id="sobre"><!-- Divisão para 'sobre'-->
+			<h3>Sobre</h3>
+			<p>Noticias da região, horóscopo, dicas de beleza <br/> <!-- br quebra a linha--> e muito mais!</p>
+		</div><!-- Divisão fecha 'sobre'-->
+		<div class="conteudo"><!-- Divisão de Conteudo-->
+				<div><!-- Área de noticias -->
+				<div><!-- Divisão para noticia 1-->
+					<h3>Taxa de assassinatos abaixam em Joinville</h3>
+					<p>Com a prisão do chefe do tráfico o número de mortes díminuiram</p>
+					<img src="layout/imgs/prisao.jpg" class="img_noticia" /><!--colocar uma imagem no código; width= altura da imagem; height: largura da imagem-->
+				</div><!-- Fecha noticia 1-->
+				<hr/><!-- Faz um risco para dividir a noticia-->
+				<div><!-- Divisão de noticia 2-->
+					<h3>Show da Karol Conka em Joinville este fim de semana</h3>
+					<p> Este fim de semana Karol Conká estara se apresentando na expoville </p>
+					<img src="layout/imgs/conka.jpg" class="img_noticia" />
+					</div><!-- Fecha noticia 2 -->
+					<hr/>
+					<div><!-- Divisão para noticia 3-->
+						<h3>4 melhores combinações amorosas do signo de Touro</h3>
+						<ul><!-- tag ol deixa ordenada e a tag ul deixa desordenada-->
+							<li>Gêmeos</li>
+							<li>Câncer</li>
+							<li>Leão</li>
+							<li>Peixes</li>
+						</ul>
+							<img src="layout/imgs/touro.jpg" class="img_noticia" />
+					</div><!-- Fecha noticia 3-->
+					<div><!--Divisão para noticia 4-->
+					<hr/>
+						<h3>Novos processadores INEL</h3>
+						<p>Inel inova novamente nos processadores.</p>
+						<table border="1"><!-- Criar tabela e definir borda-->
+							<thead><!--Criar cabeçalho da tabela-->
+								<tr>
+									<th>Modelo</th>
+									<th>GHz</th>
+									<th>Valor</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>i7</td><!--Mescla linha 1-->
+									<td>3.7</td>
+									<td>800,00</td>
+								</tr>
+								<tr>
+									<td>i5</td>
+									<td>3</td>
+									<td>590,34</td>
+								</tr>
+								<tr>
+									<td rowspan="2">i3</td><!--mescla as linhas-->
+									<td>2.4</td>
+									<td>300,20</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>250,79</td>
+								</tr>
+							</tbody>
+							<tfoot><!--Colocar fonte da noticia-->
+								<tr>
+									<td colspan="3">Fonte www.wikipedia.com/processadores-inel</td><!--Mescla as colunas-->
+								</tr>
+							</tfoot>
+						</table><!--Fecha tabela-->
+					</div><!--Fecha noticia 4-->
+					<hr/>
+					<div><!--Divisão noticia 5-->
+						<h3>Novidade no HTML5</h3>
+						<p>Nova tag adicionada! </p>
+						<!--
+							slit; sinal less-than
+							&gt; sinal greater-than
+						-->
+						<pre>
+	&lt;body&gt;
+		&lt;canvas/&gt;
+	&lt;/body&gt;
+						</pre>
+					</div><!--Fecha noticia 5-->
+			</div><!-- Fecha área de noticias -->
+			<hr/>
+			<div class="menu_inferior">
+				<a href="paginas/categoria.html" class="menu_inferior"> Agenda de Shows </a>
+				<a href="#" class="menu_inferior"> Voltar ao Topo </a> <!--Local-->
+				<a href="paginas/cadastro.html" class="menu_inferior"> Cadastre-se </a> <!--Externo-->
+			</div>
+		<hr/>
+		<footer><!-- Rodapé -->
+			<p> All rights reserved © </p>
+		</footer>
+	</body>
+</html>

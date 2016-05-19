@@ -1,0 +1,139 @@
+﻿/*
+Autor: Bruno
+Data da criação: 17/05/2016
+Data da alteração: 17/05/2016
+Descrição: Estilização geral do WN V4.
+*/
+
+html{
+  width:100%;
+  height: 100%;
+  margin: 0 auto;
+
+}
+
+body{
+  width: 810px;
+  height: 100%;
+  margin: 0px auto;
+  background-color: rgb(255, 255, 255)
+
+}
+
+header{
+  width: 810px;
+  height: 120px;
+  background-color:rgb(181, 180, 172);
+  margin: 0px auto;
+  margin-top: 5px;
+  color: rgb(255, 255, 255);
+}
+
+header h1{
+  color: rgb(31, 92, 122);
+  text-align: center;
+  font-weight: bold;
+}
+
+header h2{
+  color: rgb(31, 92, 122);
+
+
+
+}
+
+nav{
+  width: 810px;
+  height: 12px;
+  background-color:rgb(207, 14, 14);
+  margin: 0px auto;
+}
+
+#menu ul{
+  width: 100%;
+  height: 80px;
+  padding:0px;
+	margin:0px;
+	list-style:none;
+
+}
+
+#menu ul li a {
+  width: 270px;
+  height: 15px;
+	background-color:#EDEDED;
+	color: #333;
+	text-decoration: none;
+	border-bottom:3px solid #EDEDED;
+  float: left;
+}
+
+#menu ul li a:hover {
+	background-color:#D6D6D6;
+	color: #6D6D6D;
+	border-bottom:3px solid rgb(0, 117, 255);
+}
+
+
+#sobre{
+  width: 810px;
+  height: 80px;
+  margin: 0px auto;
+  background-color: rgb(181, 180, 172);
+  white-space: nowrap;
+}
+
+div h3{
+  text-align: center;
+}
+
+.conteudo{
+  background-color: rgb(181, 180, 172);
+}
+
+div h3{
+  color: rgb(31, 92, 122);
+}
+
+.img_noticia{
+  width: 600px;
+  height: 380px;
+
+}
+
+
+.img_show{
+  width: 600px;
+  height: 380px;
+}
+
+.menu_inferior{
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  color: rgb(31, 92, 122);
+}
+footer{
+    width: 810px;
+    height: 30px;
+    background: rgb(31, 92, 122);
+}
+
+footer p{
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+
+}
+
+.form_cadastro{
+  margin-top: 10px;
+  border: 2px solid;
+}
+
+table{
+  width: 180px;
+  height: 90px;
+  margin-top: 10px;
+  background-color: rgb(181, 180, 172);
+}
